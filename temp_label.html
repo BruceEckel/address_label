@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Address Label</title>
+    <style>
+        @page { size: letter landscape; margin: 0.5in; }
+        body { margin: 0; padding: 20px; font-family: Arial, sans-serif; }
+        .return-address { 
+            position: absolute; 
+            top: 30px; 
+            left: 30px; 
+            font-size: 20px; 
+            line-height: 1.2;
+        }
+        .to-address { 
+            position: absolute; 
+            top: 50%; 
+            left: 1.6727941176470589in; 
+            transform: translateY(-50%); 
+            font-size: 27px; 
+            font-weight: bold; 
+            line-height: 1.3; 
+            text-align: left;
+            white-space: pre-line;
+        }
+        @media print {
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="return-address">Bruce Eckel<br>107 WhiteRock Suite 969<br>Crested Butte, CO 81224</div>
+    <div class="to-address">Daniel Will-Harris
+2850 Angelo Dr
+Los Angeles, CA 90077-2104</div>
+    <div class="no-print" style="position: fixed; bottom: 20px; right: 20px; background: #f0f0f0; padding: 10px; border-radius: 5px;">
+        <p>Press Ctrl+P to print<br>Make sure paper size is set to Letter</p>
+    </div>
+</body>
+</html>
